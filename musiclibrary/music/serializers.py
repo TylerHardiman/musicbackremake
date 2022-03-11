@@ -12,12 +12,10 @@ class SongSerializer(serializers.ModelSerializer):
 
 #Deciding to go this route going through the django REST framework documentation provided
         
-class AddSongSerializer(serializers.Serializer):
-    title = serializers.CharField(max_length=100, blank=True, default='')
-    artist = serializers.CharField(max_length=100, blank=True, default='')
-    album = serializers.CharField(max_length=100, blank=True, default='')
-    genre = serializers.CharField(max_length=100, blank=True, default='')
-    release_date = serializers.CharField(max_length=100, blank=True, default='')
+class AddSongSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = AddSong
+        fields = ['id', 'title', 'artist', 'album', 'genre', 'release_date']
     
     def create(self, validated_data):
         """
