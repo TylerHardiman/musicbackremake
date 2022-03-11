@@ -1,0 +1,31 @@
+
+#GET request 201 success on http://127.0.0.1:8000/music/
+[
+    {
+        "id": 1,
+        "title": "The Kick",
+        "artist": "Foxes",
+        "album": "The Kick",
+        "genre": "Punk",
+        "release_date": "2022-02-28"
+    },
+    {
+        "id": 2,
+        "title": "Glitch Princess",
+        "artist": "Yeule",
+        "album": "Glitch Princess",
+        "genre": "punk",
+        "release_date": "2022-02-28"
+    }
+]
+
+#Used Postman to add a new row to the DB. 201 success on http://127.0.0.1:8000/music/
+
+{
+    "id": 3,
+    "title": "What's Going on",
+    "artist": "Marvin Gaye",
+    "album": "What's Going on",
+    "genre": "Soul",
+    "release_date": "release_date"
+}
