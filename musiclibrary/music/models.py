@@ -16,6 +16,3 @@ class AddSong(models.Model):
     genre = models.CharField(max_length=100, blank=True, default='')
     release_date = models.CharField(max_length=100, blank=True, default='')
 
-
-    class Meta:
-        db_table = 'music_library_database'
